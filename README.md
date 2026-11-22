@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add your Frontend Mentor solution URL here](https://www.frontendmentor.io)
-- Live Site URL: [Add your live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-tip-calculator-app-using-js-EYpnYFF5ZR](https://www.frontendmentor.io/solutions/responsive-tip-calculator-app-using-js-EYpnYFF5ZR)
+- Live Site URL: [https://zvko-3dg3.github.io/tip-calculator-app-main/](https://zvko-3dg3.github.io/tip-calculator-app-main/)
 
 ## My process
 
