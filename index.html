@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h1>SPLI<br />TTER</h1>
+    <main>
+      <article class="calculator-card">
+        <form class="inputs-section">
+          <div class="input-label">
+            <label for="bill">Bill</label>
+            <div class="error-message" id="bill-error"></div>
+          </div>
+          <input id="bill" type="text" inputmode="decimal" placeholder="0" />
+          <img
+            src="./images/icon-dollar.svg"
+            id="dollar-icon"
+            alt="Dollar sign"
+            width="12"
+            height="18"
+          />
+          <fieldset>
+            <legend>Select Tip %</legend>
+            <div class="tip-grid">
+              <input type="radio" id="tip-5" name="tip" value="5" />
+              <label for="tip-5">5%</label>
+              <input type="radio" id="tip-10" name="tip" value="10" />
+              <label for="tip-10">10%</label>
+              <input type="radio" id="tip-15" name="tip" value="15" />
+              <label for="tip-15">15%</label>
+              <input type="radio" id="tip-25" name="tip" value="25" />
+              <label for="tip-25">25%</label>
+              <input type="radio" id="tip-50" name="tip" value="50" />
+              <label for="tip-50">50%</label>
+              <input
+                type="text"
+                inputmode="decimal"
+                id="custom-tip"
+                placeholder="Custom"
+              />
+            </div>
+          </fieldset>
+          <div class="input-label">
+            <label for="people">Number of People</label>
+            <div class="error-message" id="people-error"></div>
+          </div>
+          <input id="people" type="text" inputmode="numeric" placeholder="0" />
+          <img
+            src="./images/icon-person.svg"
+            id="person-icon"
+            alt="Person icon"
+            width="12"
+            height="16"
+          />
+        </form>
+
+        <section class="results-section" aria-live="polite">
+          <div class="result-row">
+            <p>Tip Amount <span>/ person</span></p>
+            <output id="tip-amount">$0.00</output>
+          </div>
+          <div class="result-row">
+            <p>Total <span>/ person</span></p>
+            <output id="total">$0.00</output>
+          </div>
+          <button type="reset" disabled onclick="resetCalculator()">
+            RESET
+          </button>
+        </section>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
